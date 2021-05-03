@@ -13,8 +13,7 @@ class Character extends Component{
     fetch('http://localhost:4000/api/characters')
     .then( res => res.json())
     .then(characters => this.setState({characters}, () => console.log('Here are the characters', characters)));
-
-  }
+ 
 
   render() {
     return(
@@ -29,4 +28,5 @@ class Character extends Component{
   );
 
     }
+  }
 }
